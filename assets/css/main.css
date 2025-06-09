@@ -65,7 +65,7 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
+input, select, textarea {resize: none;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -2334,7 +2334,7 @@ body, input, select, textarea {resize: none;
 	input[type="password"],
 	input[type="email"],
 	select,
-	textarea {
+	textarea {resize: none;
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -2354,7 +2354,7 @@ body, input, select, textarea {resize: none;
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
 		select:invalid,
-		textarea:invalid {
+		textarea:invalid {resize: none;
 			box-shadow: none;
 		}
 
