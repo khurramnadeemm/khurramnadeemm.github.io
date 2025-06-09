@@ -147,11 +147,7 @@ input, select, textarea {
 		color: #212931;
 	}
 
-	textarea {
-    resize: none; /* This will prevent the textarea from being resized */
-}
-
-body, input, select, textarea {
+body, input, select, textarea {resize: none;
     font-family: "Merriweather", Georgia, serif;
     font-weight: 300;
     font-size: 1rem;
