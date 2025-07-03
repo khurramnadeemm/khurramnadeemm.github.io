@@ -1,7 +1,12 @@
 module.exports = function(eleventyConfig) {
-  // ✅ Copy entire folders — not specific files unless necessary
+  // Copy assets
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/images");
+
+  // Blog post collection
+  eleventyConfig.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/*.md");
+  });
 
   return {
     dir: {
