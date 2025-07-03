@@ -8,3 +8,8 @@
   <body>
   </body>
 </html>
+<script>
+  window.onerror = function(msg, url, line, col, error) {
+    document.body.innerText = 'JS Error: ' + msg + ' at ' + line + ':' + col;
+  };
+</script>
